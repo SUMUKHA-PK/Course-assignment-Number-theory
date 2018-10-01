@@ -18,3 +18,13 @@ ___
 <b> Limitations of naive method:  </b>    
 1. We must produce a lot of prime numbers.  
 2. We might not know till where to produce numbers and may end up not finding relevant answers.
+
+
+Approach used ( [Proof of the theorem]() )
+___
+
+Theorem Statement
+
+* Given a and b, find gcd(a, b)
+* gcd(a,b) = 1, <b> Infinite primes are present</b>
+* Else <b> Number of primes is countable </b>
