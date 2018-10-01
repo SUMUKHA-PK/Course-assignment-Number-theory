@@ -27,4 +27,4 @@ Theorem Statement
 
 * Given a and b, find gcd(a, b)
 * gcd(a,b) = 1, <b> Infinite primes are present</b>
-* Else <b> Number of primes is countable </b>
+* Else if gcd(a,b) !=1 <b> No primes exist </b>

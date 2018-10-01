@@ -21,7 +21,7 @@ function gcd = get_gcd( a, b)
 
     % Euclidean algorithm to find coprime numbers
     if(b==0)
-        gcd = a;
+        gcd = abs(a);                               %Absolute is used because, if -a is a gcd then a is also. And the greatest of the two is a, not -a.
     else
         gcd = get_gcd(b,mod(a,b));
     end

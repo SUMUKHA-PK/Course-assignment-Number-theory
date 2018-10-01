@@ -17,43 +17,11 @@
 % Input parameters:
 % a and b: to find prime ? a mod b
 function [ prime, isPresent ] = find_prime( a, b) 
-
-
-    % base condition
-    % if b = 0 check if a is a prime
-    % infinite primes cannot be present
-    if b == 0
-        if is_prime(a)
-            prime = a;
-        else
-            prime = -1;
-        end
-        isPresent = 0;
-        return 
-    
-        
-    % normalize a and b such that a and b > 0 and a < b
-    % essential for finding gcd
-    elseif b < 0 && a > 0
-        b = -b;
-        
-    elseif b < 0 && a < 0
-        b = -b;
-        a = b+a;
-    end
-    
-    
-    % if a > b reduce a such that a mod b remains the same
-    if a >= b
-        a = mod(a,b);
-    end
-    
     
     % get gcd of a and b from the function get_gcd
     gcd = get_gcd(a,b);
     
-    
-    % From dirchlets theorem of arithmetic progression
+    % From dirichlets theorem of arithmetic progression
     % if gcd(a, b) is 1 there are finite primes of the form prime ? a mod b
     % As there are finite primes it is difficult to tell whether there is a
     % prime or not.
