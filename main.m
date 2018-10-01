@@ -3,7 +3,7 @@
         Sumukha PK  (16CO145)
 
     Problem Statement: Finding a prime P which is congruent to any given a
-    and b such that p?a mod b
+    and b such that p modb = a mod b
 %}
 
 
