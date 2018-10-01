@@ -6,15 +6,31 @@
     a < b and a, b > 0  
 %}
 
+% get_gcd function inputs a and b as input parameters
+% returns gcd(a,b) as the output
 
+% FUNCTION PARAMETERS:
 
-% Euclidean algorithm to find coprime numbers
+% Return value : 
+% gcd : greatest common divisor of a and b
+
+% Input parameters:
+% a and b: to find gcd of a and b
 
 function gcd = get_gcd( a, b)
+
+    % Euclidean algorithm to find coprime numbers
+    % pseudo code for the algorithm
+    % function gcd(a, b)
+    %     while a ? 0
+    %        t := a; 
+    %        a := b mod a; 
+    %        b := t; 
+    %     return a;
     while a ~= 0
-        c = a;
+        t = a;
         a = mod(b, a);
-        b = c;
+        b = t;
     end
     
     gcd = b;
