@@ -2,14 +2,14 @@
 %Logic is to check whether a number is divisible by any number less than
 %its square root
 function result = is_prime(a)
-    f=1;
-    for i = 2:sqrt(a)
-        disp(mod(a,i));
+    f=0;
+    for i = 1:sqrt(a)
         if(mod(a,i)==0)
-            f=0;
+            f=1;
             break;
         end
     end
-    result = f;
+    if(f==1)
+        result = 
     return
 end

@@ -1,0 +1,3 @@
+function array = find_all_primes(a,b,primes_range)
+    
+end

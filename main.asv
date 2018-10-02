@@ -27,10 +27,5 @@ else
     if p ~= -1
         display(p);
     end
-    primes_range = input('\nHow many primes satisying the equation should be displayed?" ');
-    output_array = find_all_primes(a,b,primes_range);
-    for i = 1:size(output_array)
-        fprintf("%d ",output_array(i));
-    end
 end
 
