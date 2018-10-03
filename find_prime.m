@@ -2,9 +2,8 @@
     By  Prajval M   (16CO234)
         Sumukha PK  (16CO145)
 
-    This function is used to find whether there are infinite primes. If
-    there are infinite of them it returns the first prime (prime) of the form 
-    prime congruent to a mod b   
+    This function is used to find whether there are infinite primes. The 
+    function returns a value indicating existance of atleast one prime
 %}
 
 
@@ -64,6 +63,5 @@ function [ prime, isPresent ] = find_prime( a, b)
         i = i + 1;
     end
         
-    % Function end
     return
 end
