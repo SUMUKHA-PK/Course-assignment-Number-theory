@@ -49,13 +49,11 @@ function [ prime, isPresent ] = find_prime( a, b)
     end
     
     
-    % solving congruencies prime ? a mod b
+    % solving congruencies  -> p modb = a mod b is,
     % same as solving prime = a + b*i where i is any integer
-    % is_prime checks if the given nnumber is a prime number or not
+    % is_prime checks if the given number is a prime number or not
     prime = a;
     i = 1;
-    
-    display(a);
     
     while is_prime(prime) == 0
         

@@ -11,13 +11,14 @@
 a = input('\na: ');
 b = input('\nb: ');
 
+%Copy of the variables to reference later
+a_const = a;
+b_const = b;
+
 if b==0
     fprintf("Modulo operation is not defined for zero, please provide working conditions!\n");
     return
 end
-
-% display a and b
-fprintf("For a=%d and b=%d\nFinding prime that satisfies p?a mod b....\n", a, b);
 
 
 % if isPresent is 1 then there are infinite primes else there are not
@@ -27,19 +28,26 @@ fprintf("For a=%d and b=%d\nFinding prime that satisfies p?a mod b....\n", a, b)
 
 % if prime exists display the prime
 if isPresent == 0
-    fprintf("Countable number of primes exist\n");
     if p ~= -1
-        fprintf("%d is the only prime congruent to a mod b\n\n", p);
+        fprintf("%d is the ONLY PRIME congruent to %d mod %d\n\n", p,a_const,b_const);
+    else 
+        fprintf("\nNO PRIMES EXIST of the form p mod %d = %d mod %d\n\n",b_const,a_const,b_const);
     end
     return
 end
 
-fprintf("\nINFINITE PRIMES EXIST\n%d is the first prime which is congruent to a mod b\n", p);
+fprintf("\nINFINITE PRIMES EXIST\n%d is the first prime which is congruent to %d mod %d\n", p,a_const,b_const);
 
-primes_range = input('\nHow many primes satisying the equation should be displayed?\n\n');
+primes_range = input('\nInput range of numbers where the primes of form p mod b = a mod b must be searched: ');
 output_array = find_all_primes(a,b,primes_range);
-for i = 1:size(output_array)
-    fprintf("%d ",output_array(i));
+
+if size(output_array)==0
+    fprintf("No primes of form ---p mod b = a mod b--- in range provided! Please provide bigger range!");
+else
+    fprintf("Output array: ");
+    for i = 1:size(output_array)
+        fprintf("%d ",output_array(i));
+    end
 end
 fprintf("\n\n");
 
