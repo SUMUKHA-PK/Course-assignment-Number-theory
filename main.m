@@ -21,16 +21,17 @@ else
     % if isPresent is 1 then there are infinite primes else there are not
     % p will be the first prime of the form p?a mod b
     % p = -1 if it does not exist
-    p, isPresent = find_prime(a,b);
+    [p, isPresent] = find_prime(a,b);
 
     % if prime exists display the prime
     if p ~= -1
         display(p);
     end
-    primes_range = input('\nHow many primes satisying the equation should be displayed?" ');
+    primes_range = input('\nHow many primes satisying the equation should be displayed?\n');
     output_array = find_all_primes(a,b,primes_range);
     for i = 1:size(output_array)
         fprintf("%d ",output_array(i));
     end
+    fprintf("\n\n");
 end
 

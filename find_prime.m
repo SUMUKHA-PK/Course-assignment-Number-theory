@@ -54,6 +54,7 @@ function [ prime, isPresent ] = find_prime( a, b)
         i = i + 1;
     end
     
+    display(prime)
     
     % Function end
     return
