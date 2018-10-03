@@ -3,7 +3,7 @@
         Sumukha PK  (16CO145)
 
     This function is used to find whether there are infinite primes. The 
-    function returns a value indicating existance of atleast one prime
+    function returns a value indicating existance of atleeas
 %}
 
 
@@ -50,18 +50,18 @@ function [ prime, isPresent ] = find_prime( a, b)
     end
     
     
-    % solving congruencies  -> p modb = a mod b is,
-    % same as solving prime = a + b*i where i is any integer
-    % is_prime checks if the given number is a prime number or not
+    % solving congruencies  -> p modb = a mod b is same as solving prime = a + b*i 
+    % where i is any integer is_prime checks if the given number is a prime number or not
     prime = a;
     i = 1;
     
+    %Finds the first prime number of the form p mod b = a mod b
     while is_prime(prime) == 0
         
         % Each iteration gives prime to be a unique number of the form a mod b
         prime = b*i + a;
         i = i + 1;
     end
-        
+
     return
 end

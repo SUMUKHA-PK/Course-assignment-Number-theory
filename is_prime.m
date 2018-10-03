@@ -17,7 +17,8 @@ function result = is_prime(a)
         result=0;
     end
 
-    % generic algorithm to find if a number is prime
+    % algorithm to find if a number is prime: if any number divides it,
+    % break the loop
     for i = 2:sqrt(a)
         if(mod(a,i)==0)
             result=0;
