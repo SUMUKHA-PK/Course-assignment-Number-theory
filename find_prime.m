@@ -18,6 +18,14 @@
 % a and b: to find prime ? a mod b
 function [ prime, isPresent ] = find_prime( a, b) 
     
+    % normalize a and b such that a, b > 0 and b > a
+    if b < 0
+        b = -b;
+    end
+    
+    % reduces the abs value of a such that it is smaller than b
+    a = mod(a, b);
+    
     % get gcd of a and b from the function get_gcd
     gcd = get_gcd(a,b);
     
@@ -29,6 +37,8 @@ function [ prime, isPresent ] = find_prime( a, b)
     % if a is a prime, prime = a
     % else prime is unknown (-1)
     if gcd == 1
+        isPresent = 1;
+    else
         isPresent = 0;
         if is_prime(a)
             prime = a;
@@ -36,8 +46,6 @@ function [ prime, isPresent ] = find_prime( a, b)
             prime = -1;
         end
         return
-    else
-        isPresent = 1;
     end
     
     
@@ -47,15 +55,15 @@ function [ prime, isPresent ] = find_prime( a, b)
     prime = a;
     i = 1;
     
+    display(a);
+    
     while is_prime(prime) == 0
         
         % Each iteration gives prime to be a unique number of the form a mod b
         prime = b*i + a;
         i = i + 1;
     end
-    
-    display(prime)
-    
+        
     % Function end
     return
 end

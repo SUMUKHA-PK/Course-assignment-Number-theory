@@ -4,7 +4,6 @@
 function result = is_prime(a)
     f=1;
     for i = 2:sqrt(a)
-        disp(mod(a,i));
         if(mod(a,i)==0)
             f=0;
             break;
