@@ -24,6 +24,7 @@ ___
     * If a mod b such that a > 0, a < |b| and a is a prime then p = a
     * If a = 0, and b is prime then p = b
     * there are no prime satisfying the conditon.</b>
+    
 ___
 
 ## Approach used : 
