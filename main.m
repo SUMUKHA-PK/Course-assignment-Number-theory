@@ -34,7 +34,7 @@ if isPresent == 0
     return
 end
 
-fprintf("\nINFINITE PRIMES EXIT\n%d is the first prime which is congruent to a mod b\n", p);
+fprintf("\nINFINITE PRIMES EXIST\n%d is the first prime which is congruent to a mod b\n", p);
 
 primes_range = input('\nHow many primes satisying the equation should be displayed?\n\n');
 output_array = find_all_primes(a,b,primes_range);

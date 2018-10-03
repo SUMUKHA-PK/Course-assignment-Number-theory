@@ -3,6 +3,10 @@
 %its square root
 function result = is_prime(a)
     f=1;
+    if a<=1
+        f=0;
+    end
+
     for i = 2:sqrt(a)
         if(mod(a,i)==0)
             f=0;
