@@ -42,6 +42,8 @@ function [ prime, isPresent ] = find_prime( a, b)
         isPresent = 0;
         if is_prime(a)
             prime = a;
+        elseif a == 0 && is_prime(b)
+            prime = b;
         else
             prime = -1;
         end
