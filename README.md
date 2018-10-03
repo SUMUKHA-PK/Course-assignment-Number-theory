@@ -20,7 +20,10 @@ ___
 
 * gcd(a,b) = 1, <b> Infinite primes congruent to a mod b exist</b>
 
-* Else if gcd(a,b) !=1 <b> Prime p congruent to a mod b may or may not exist. If a mod b such that a > 0, a < |b| and a is a prime then p = a or there are no prime satisfying the conditon.</b>
+* Else if gcd(a,b) !=1 <b> Prime p congruent to a mod b may or may not exist. 
+    * If a mod b such that a > 0, a < |b| and a is a prime then p = a
+    * If a = 0, and b is prime then p = b
+    * there are no prime satisfying the conditon.</b>
 ___
 
 ## Approach used : 
@@ -44,7 +47,9 @@ ___
 
         * If a is a prime, then only 1 prime exists of the form <b>a mod b i.e a</b>.
 
-        * If a is not a prime, then no prime exists of the form a mod b.
+        * If a is 0 and b is a prime, then only 1 prime exists of the form <b>a mod b i.e b</b>
+
+        * Else no prime exists such that the prime ≡ a(modb)
 
 ### <b>Finding all primes when gcd(a,b) = 1</b>
 * Input max
