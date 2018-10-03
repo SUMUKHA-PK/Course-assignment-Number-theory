@@ -40,7 +40,7 @@ ___
         * Find the first prime p, by incrementing i from 0 such that <b>p = a + ib</b>
         and checking if p is a prime
     
-    * If gcd(a,b) != 1. Infinite primes which are congruent to a mod b do not exist.<sup>[3](README.md#Proofs)</sup>
+    * If gcd(a,b) != 1. Infinite primes which are congruent to a mod b do not exist.<sup>[3](README.md##Proofs)</sup>
 
         * If a is a prime, then only 1 prime exists of the form <b>a mod b i.e a</b>.
 
@@ -96,8 +96,6 @@ ___
 
     Hence Proved
 
-
-
 ___
 
 ## How to run:
@@ -108,7 +106,9 @@ ___
 * If prime of the form p mod b = a mod b exist then the prime is given as output.
 * If infinite primes of the form p mod b = a mod b exist, the program prompts for a range until which the primes satisfying the equation will be displayed.
 * Finally the list of primes is displayed.
+
 ___
+
 
 ## Output
 ![Output_1](images/op_1.PNG)
