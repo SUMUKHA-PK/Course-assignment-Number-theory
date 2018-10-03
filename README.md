@@ -40,7 +40,7 @@ ___
         * Find the first prime p, by incrementing i from 0 such that <b>p = a + ib</b>
         and checking if p is a prime
     
-    * If gcd(a,b) != 1. Infinite primes which are congruent to a mod b do not exist.<sup>[3](README.md##Proofs)</sup>
+    * If gcd(a,b) != 1. Infinite primes which are congruent to a mod b do not exist.<sup>[3](README.md#proofs)</sup>
 
         * If a is a prime, then only 1 prime exists of the form <b>a mod b i.e a</b>.
 
