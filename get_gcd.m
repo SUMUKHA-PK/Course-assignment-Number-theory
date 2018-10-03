@@ -20,10 +20,19 @@
 function gcd = get_gcd( a, b)
 
     % Euclidean algorithm to find coprime numbers
-    if(b==0)
-        gcd = abs(a);                               %Absolute is used because, if -a is a gcd then a is also. And the greatest of the two is a, not -a.
-    else
-        gcd = get_gcd(b,mod(a,b));
+    % pseudo code for the algorithm
+    % function gcd(a, b)
+    %     while a ? 0
+    %        t := a; 
+    %        a := b mod a; 
+    %        b := t; 
+    %     return a;
+    while a ~= 0
+        t = a;
+        a = mod(b, a);
+        b = t;
     end
+    
+    gcd = b;
     return
 end
