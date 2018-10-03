@@ -1,0 +1,33 @@
+>> main
+
+a: 12
+
+b: 0
+Modulo operation is not defined for zero, please provide working conditions!
+>> main
+
+a: 0
+
+b: 14
+
+NO PRIMES EXIST of the form p mod 14 = 0 mod 14
+
+>> main
+
+a: -3
+
+b: 13
+
+INFINITE PRIMES EXIST
+23 is the first prime which is congruent to -3 mod 13
+
+Input range of numbers where the primes of form p mod b = a mod b must be searched: 1000
+Output array: 23 101 127 179 257 283 439 491 569 647 673 751 829 881 907 
+
+>> main
+
+a: 4
+
+b: -18
+
+NO PRIMES EXIST of the form p mod -18 = 4 mod -18

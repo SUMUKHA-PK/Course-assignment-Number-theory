@@ -1,0 +1,30 @@
+ main
+
+a: 16
+
+b: -45
+
+INFINITE PRIMES EXIST
+61 is the first prime which is congruent to 16 mod -45
+
+Input range of numbers where the primes of form p mod b = a mod b must be searched: 1000
+Output array: 61 151 241 331 421 601 691 
+
+>> main
+
+a: -34
+
+b: -15
+
+INFINITE PRIMES EXIST
+11 is the first prime which is congruent to -34 mod -15
+
+Input range of numbers where the primes of form p mod b = a mod b must be searched: 1000
+Output array: 11 41 71 101 131 191 251 281 311 401 431 461 491 521 641 701 761 821 881 911 941 971 
+
+>> main
+
+a: 3
+
+b: 6
+3 is the ONLY PRIME congruent to 3 mod 6

@@ -1,0 +1,26 @@
+>> main
+
+a: 100
+
+b: 247
+
+INFINITE PRIMES EXIST
+347 is the first prime which is congruent to 100 mod 247
+
+Input range of numbers where the primes of form p mod b = a mod b must be searched: 10000
+Output array: 347 4793 7757 9239 9733 
+
+>> main
+
+a: 13
+
+b: 26
+13 is the ONLY PRIME congruent to 13 mod 26
+
+>> main
+
+a: 26
+
+b: 52
+
+NO PRIMES EXIST of the form p mod 52 = 26 mod 52

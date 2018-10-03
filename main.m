@@ -24,7 +24,7 @@ end
 % if isPresent is 1 then there are infinite primes else there are not
 % p will be the first prime of the form p?a mod b
 % p = -1 if it does not exist
-[p, isPresent] = find_prime(a,b);
+[p, isPresent, a, b] = find_prime(a,b);
 
 % if prime exists display the prime
 if isPresent == 0

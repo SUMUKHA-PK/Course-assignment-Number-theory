@@ -15,7 +15,7 @@
 
 % Input parameters:
 % a and b: to find prime congruent to a mod b
-function [ prime, isPresent ] = find_prime( a, b) 
+function [ prime, isPresent,a,b ] = find_prime( a, b) 
     
     % normalize a and b such that a, b > 0 and b > a
     if b < 0
