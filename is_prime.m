@@ -2,7 +2,9 @@
     By  Prajval M   (16CO234)
         Sumukha PK  (16CO145)
 
-    This function is used to find if a given a is prime or not
+    This function is used to find if a given a is prime or not.
+    Input is the number to be checked.
+    Output is a boolean answer 1(if prime) or 0(if not prime)
 %}
 
 % Checking whether the input number is prime
