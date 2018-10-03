@@ -4,7 +4,7 @@
 
     This function is used to find whether there are infinite primes. If
     there are infinite of them it returns the first prime (prime) of the form 
-    prime ? a mod b   
+    prime congruent to a mod b   
 %}
 
 
@@ -12,10 +12,10 @@
 
 % Return values :
 % isPresent: tells whether there are infinite primes present of not
-% prime:  will be the first prime of the form prime ? a mod b
+% prime:  will be the first prime of the form prime congruent to a mod b
 
 % Input parameters:
-% a and b: to find prime ? a mod b
+% a and b: to find prime congruent to a mod b
 function [ prime, isPresent ] = find_prime( a, b) 
     
     % normalize a and b such that a, b > 0 and b > a
@@ -30,7 +30,7 @@ function [ prime, isPresent ] = find_prime( a, b)
     gcd = get_gcd(a,b);
     
     % From dirichlets theorem of arithmetic progression
-    % if gcd(a, b) is 1 there are finite primes of the form prime ? a mod b
+    % if gcd(a, b) is 1 there are finite primes of the form prime congruent to a mod b
     % As there are finite primes it is difficult to tell whether there is a
     % prime or not.
     % Thus 

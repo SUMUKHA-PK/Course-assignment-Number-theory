@@ -1,3 +1,11 @@
+%{
+    By  Prajval M   (16CO234)
+        Sumukha PK  (16CO145)
+
+    This function is used to find all the primes of the form p mod b = a
+    mod b from 0 to primes_range
+%}
+
 % Generates numbers up to given range and provides all  primes satisying
 % the criteria
 

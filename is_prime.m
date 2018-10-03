@@ -1,18 +1,28 @@
-%Checking whether the input number is prime
-%Logic is to check whether a number is divisible by any number less than
-%its square root
+%{
+    By  Prajval M   (16CO234)
+        Sumukha PK  (16CO145)
+
+    This function is used to find if a given a is prime or not
+%}
+
+% Checking whether the input number is prime
+% Logic is to check whether a number is divisible by any number less than
+% its square root
 function result = is_prime(a)
-    f=1;
+    % flag is 1 if number is prime
+    result=1;
+    
+    % if the number is <= 1 it cannot be a prime number
     if a<=1
-        f=0;
+        result=0;
     end
 
+    % generic algorithm to find if a number is prime
     for i = 2:sqrt(a)
         if(mod(a,i)==0)
-            f=0;
+            result=0;
             break;
         end
     end
-    result = f;
     return
 end
