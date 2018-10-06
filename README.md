@@ -124,6 +124,6 @@ ___
 * is_prime        -> checks whether the number is a prime or not  
 
 ## Output
-![Output_1](screenshots and transcripts/Test_case_1.PNG)
-![Output_2](screenshots and transcripts/Test_case_2.PNG)
-![Output_3](screenshots and transcripts/Test_case_3.PNG)
+![Output_1](screenshots_and_transcripts/Test_case_1.PNG)  
+![Output_2](screenshots_and_transcripts/Test_case_2.PNG)    
+![Output_3](screenshots_and_transcripts/Test_case_3.PNG)  
