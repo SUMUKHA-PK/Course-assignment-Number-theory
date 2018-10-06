@@ -115,6 +115,14 @@ ___
 
 ___
 
+##File structure:
 
+* main            -> the main file which runs the entire program
+* get_gcd         -> gets the gcd of 2 given numbers
+* find_all_primes -> finds all primes of form 'p mod b = a mod b' in a given range
+* find_prime      -> checks existance of primes of form p modb = a mod b
+* is_prime        -> checks whether the number is a prime or not
 ## Output
-![Output_1](images/op_1.PNG)
+![Output_1](screenshots and transcripts/Test_case_1.PNG)
+![Output_2](screenshots and transcripts/Test_case_2.PNG)
+![Output_3](screenshots and transcripts/Test_case_3.PNG)
