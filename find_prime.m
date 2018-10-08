@@ -23,7 +23,7 @@ function [ prime, isPresent,a,b ] = find_prime( a, b)
     end
     
     % reduces the abs value of a such that it is smaller than b
-    a = mod(a, b);
+    a = my_mod(a, b);
     
     % get gcd of a and b from the function get_gcd
     gcd = get_gcd(a,b);

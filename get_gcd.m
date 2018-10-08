@@ -29,7 +29,7 @@ function gcd = get_gcd( a, b)
     %     return a;
     while a ~= 0
         t = a;
-        a = mod(b, a);
+        a = my_mod(b, a);
         b = t;
     end
     

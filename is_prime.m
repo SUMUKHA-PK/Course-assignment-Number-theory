@@ -22,7 +22,7 @@ function result = is_prime(a)
     % algorithm to find if a number is prime: if any number divides it,
     % break the loop
     for i = 2:sqrt(a)
-        if(mod(a,i)==0)
+        if(my_mod(a,i)==0)
             result=0;
             break;
         end
